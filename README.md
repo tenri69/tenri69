@@ -1,52 +1,47 @@
 <div align="center">
-  <img src="./header.svg" alt="Henrik af Geijerstam Westerholm — Terminal" width="100%" />
+  <img src="https://raw.githubusercontent.com/tenri69/tenri69/main/header.svg" width="850" alt="Henrik af Geijerstam Westerholm" />
 </div>
+
+<br/>
 
 <div align="center">
   <a href="mailto:henkawesterholm@outlook.com">
-    <img src="https://img.shields.io/badge/Email-henkawesterholm%40outlook.com-161b22?style=flat-square&logo=minutemailer&logoColor=58a6ff&labelColor=0d1117" alt="Email" />
+    <img src="https://img.shields.io/badge/henkawesterholm%40outlook.com-161b22?style=for-the-badge&logo=minutemailer&logoColor=58a6ff" alt="Email" />
   </a>
   <a href="https://www.linkedin.com/in/henrik-af-geijerstam-w-093520229/">
-    <img src="https://img.shields.io/badge/LinkedIn-Henrik_af_Geijerstam_W-161b22?style=flat-square&logo=linkedin&logoColor=58a6ff&labelColor=0d1117" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-161b22?style=for-the-badge&logo=linkedin&logoColor=58a6ff" alt="LinkedIn" />
   </a>
-  <img src="https://img.shields.io/badge/Focus-C%2B%2B17_%7C_Java_%7C_Python-161b22?style=flat-square&logo=cplusplus&logoColor=ff7b72&labelColor=0d1117" alt="Tech Stack" />
+  <img src="https://img.shields.io/badge/Stockholm_%2F_Lund-Sweden-161b22?style=for-the-badge&logo=googlemaps&logoColor=3fb950" alt="Location" />
 </div>
 
 ---
 
-### `01` // Featured Architecture: [TnsrLang](https://github.com/tenri69/TnsrLang)
+### Technical Skills & Core Stack
 
-A standalone domain-specific language (DSL) and deep learning engine built from scratch in modern **C++17** with **zero external runtime dependencies**.
-
-```mermaid
-graph LR
-    A[Source .tnsr] -->|Custom Tokenizer| B(Token Stream)
-    B -->|Recursive-Descent| C(AST)
-    C -->|Tree-Walk Evaluator| D{AutoGrad Engine}
-    D -->|Contiguous Buffers| E[Row-Major Tensor DAG]
-    E -->|Reverse-Mode Backprop| F[Trained Weights]
-    F -->|Embedded C++ HTTP| G((< 1ms Inference))
-
-    style A fill:#0d1117,stroke:#30363d,color:#c9d1d9
-    style B fill:#0d1117,stroke:#30363d,color:#c9d1d9
-    style C fill:#0d1117,stroke:#58a6ff,color:#c9d1d9
-    style D fill:#161b22,stroke:#ff7b72,color:#ff7b72
-    style E fill:#0d1117,stroke:#30363d,color:#c9d1d9
-    style F fill:#0d1117,stroke:#3fb950,color:#c9d1d9
-    style G fill:#161b22,stroke:#3fb950,color:#3fb950
-```
-
-- **Language Frontend:** Custom tokenizer, recursive-descent AST parser, and lexically scoped tree-walk evaluator.
-- **Compute Engine:** Cache-friendly reverse-mode AutoGrad engine using flat contiguous row-major tensor buffers and non-owning DAG captures.
-- **Deployment:** End-to-end neural network training (`MNIST`, `XOR`) with an embedded C++ HTTP server for sub-millisecond browser inference.
+| Domain | Technologies & Focus |
+| :--- | :--- |
+| **Languages** | ![C++17](https://img.shields.io/badge/C++17-0d1117?style=flat-square&logo=cplusplus&logoColor=58a6ff) ![Java](https://img.shields.io/badge/Java-0d1117?style=flat-square&logo=openjdk&logoColor=ff7b72) ![Python](https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3fb950) ![SQL](https://img.shields.io/badge/SQL-0d1117?style=flat-square&logo=mysql&logoColor=a5d6ff) ![Bash](https://img.shields.io/badge/Bash-0d1117?style=flat-square&logo=gnubash&logoColor=c9d1d9) |
+| **Systems & Low-Level** | Custom Lexers & Recursive-Descent AST Parsers · Reverse-Mode AutoGrad · Memory Layout Optimization · Multithreading |
+| **Backend & Data** | Concurrent REST APIs (Java Spark, Embedded C++ HTTP) · Relational Schema Design & `SERIALIZABLE` Transactions · Python Data Pipelines |
+| **Engineering & QA** | Test-Driven Development (TDD) · Large-Scale Automated Test Suites (JUnit) · Linux/POSIX · Git CI/CD |
 
 ---
 
-### `02` // Systems & Engineering
+### Experience & Background
 
-| Project / Role | Stack | Architecture & Impact |
+- **Co-Founder & Lead Backend Engineer @ Bränslekollen**  
+  Architected and deployed automated Python data ingestion pipelines and statistical modeling systems.
+- **Test Group Lead (18-Engineer Software Project)**  
+  Directed quality assurance and TDD workflows, designing and maintaining **120+ automated Java test suites**.
+- **B.Eng. in Computer Science @ Lund University (LTH)** *(2024 – 2027)*  
+  Focusing on compilers, algorithms, concurrent programming, and large-scale software architecture.
+
+---
+
+### Highlighted Engineering Projects
+
+| System | Stack | Architecture & Highlights |
 | :--- | :--- | :--- |
-| **[Production Management System](https://github.com/Anton-Johannesson/krusty-skeleton)** | `Java` `Spark` `MySQL` | Concurrency-safe REST API and 8-table normalized schema using `SERIALIZABLE` transactions for inventory & pallet production. |
-| **Bränslekollen** <br/> *Co-Founder & Lead Backend* | `Python` `Pipelines` | Engineered automated data ingestion pipelines and statistical modeling systems from the ground up. |
-| **Large-Scale Software Project** <br/> *Test Group Lead* | `Java` `TDD` `CI/CD` | Led quality assurance across an 18-engineer project, architecting 120+ automated Java test suites. |
-| **[ABAS Alarm System](https://github.com/tenri69/python-ABAS-alarm-system)** | `Python` `Hardware` | Code-driven intrusion detection system designed for real-time door and window sensor monitoring. |
+| **[TnsrLang](https://github.com/tenri69/TnsrLang)** | `C++17` `Zero-Deps` | Standalone DSL and deep learning engine built from scratch. Features a custom tokenizer, recursive-descent AST parser, cache-friendly reverse-mode AutoGrad engine (contiguous row-major buffers), and an embedded C++ HTTP server for `<1ms` browser inference. |
+| **[Production Management System](https://github.com/Anton-Johannesson/krusty-skeleton)** | `Java` `Spark` `MySQL` | Concurrency-safe REST API backed by an 8-table normalized MySQL schema using `SERIALIZABLE` transactions for real-time inventory and pallet production. |
+| **[ABAS Alarm System](https://github.com/tenri69/python-ABAS-alarm-system)** | `Python` `IoT/Sensors` | Code-driven intrusion detection system engineered for real-time door and window sensor monitoring. |
