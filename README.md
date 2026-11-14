@@ -7,7 +7,7 @@
 I build compilers, tensor engines, and concurrent backend systems from scratch.
 
 ### TnsrLang
-**[DITT-ANVÄNDARNAMN/TnsrLang](https://github.com/DITT-ANVÄNDARNAMN/TnsrLang)**: a standalone domain-specific language (DSL) and deep learning engine built from scratch in modern C++17.
+**[tenri69/TnsrLang](https://github.com/DITT-ANVÄNDARNAMN/TnsrLang)**: a standalone domain-specific language (DSL) and deep learning engine built from scratch in modern C++17.
 - Zero external runtime dependencies — custom tokenizer, recursive-descent AST parser, and lexically scoped tree-walk evaluator
 - Cache-friendly reverse-mode AutoGrad engine using flat contiguous row-major tensor buffers and non-owning DAG captures
 - End-to-end neural network training (MNIST, XOR) with an embedded C++ HTTP server for sub-millisecond browser inference
@@ -16,7 +16,7 @@ I build compilers, tensor engines, and concurrent backend systems from scratch.
 
 | Project | What it does |
 | :--- | :--- |
-| **[Production Management System](https://github.com/DITT-ANVÄNDARNAMN/REPO-NAMN)** | Concurrency-safe Java REST API (Spark) and 8-table normalized MySQL schema with serializable transactions for inventory & pallet production |
+| **[Production Management System](https://github.com/Anton-Johannesson/krusty-skeleton)** | Concurrency-safe Java REST API (Spark) and 8-table normalized MySQL schema with serializable transactions for inventory & pallet production |
 
 ### Background
 - B.Eng. in Computer Science, **Lund University (LTH)** (2024 – 2027)
